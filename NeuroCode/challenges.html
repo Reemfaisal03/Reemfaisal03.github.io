@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges - NeuroCode</title>
+    <link rel="stylesheet" href="challenges.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="index.html">Explore</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="profile.php">Profile</a>
+        <a href="ai-chat.html">NeuroCode AI</a>
+    </nav>
+
+    
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Take on the Challenge!</h1>
+            <p>Put your coding skills to the test and climb the leaderboard.</p>
+            <div class="countdown">
+                <p>Next challenge starts in:</p>
+                <span id="countdown-timer">03:12:45</span>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="featured-challenge">
+        <h2>🏆 Featured Challenge</h2>
+        <div class="challenge-card">
+            <h3>Build a To-Do List App</h3>
+            <p>Challenge yourself to create a fully functional to-do list app using JavaScript.</p>
+            <p><strong>Time:</strong> 2 hours</p>
+            <p><strong>Difficulty:</strong> Intermediate</p>
+            <button>Join Challenge</button>
+        </div>
+    </section>
+
+    
+    <section class="challenge-list">
+        <h2>Available Challenges</h2>
+        <div class="challenge-cards">
+            <div class="challenge-card">
+                <h3>FizzBuzz Challenge</h3>
+                <p>Write a program that prints numbers with a twist.</p>
+                <p><strong>Time:</strong> 30 mins</p>
+                <p><strong>Difficulty:</strong> Beginner</p>
+                <button>Join Challenge</button>
+            </div>
+            <div class="challenge-card">
+                <h3>Portfolio Website</h3>
+                <p>Design and build a personal portfolio website.</p>
+                <p><strong>Time:</strong> 4 hours</p>
+                <p><strong>Difficulty:</strong> Advanced</p>
+                <button>Join Challenge</button>
+            </div>
+            <div class="challenge-card">
+                <h3>Data Visualization</h3>
+                <p>Create a dashboard using real-world data and charts.</p>
+                <p><strong>Time:</strong> 3 hours</p>
+                <p><strong>Difficulty:</strong> Intermediate</p>
+                <button>Join Challenge</button>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="leaderboard">
+        <h2>Leaderboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>CodeMaster</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>DevQueen</td>
+                    <td>1100</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>BugSquasher</td>
+                    <td>1050</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    
+    <section class="cta">
+        <h2>Are you ready to become a coding champion?</h2>
+        <button class="cta-btn">Start Your Challenge Now</button>
+    </section>
+
+    <script>
+        
+        const countdownTimer = document.getElementById('countdown-timer');
+        let timeLeft = 3 * 60 * 60 + 12 * 60 + 45; 
+
+        function updateCountdown() {
+            const hours = String(Math.floor(timeLeft / 3600)).padStart(2, '0');
+            const minutes = String(Math.floor((timeLeft % 3600) / 60)).padStart(2, '0');
+            const seconds = String(timeLeft % 60).padStart(2, '0');
+            countdownTimer.textContent = `${hours}:${minutes}:${seconds}`;
+            timeLeft--;
+        }
+
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    background: #1a376d;
+    color: #E4D9FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #E4D9FF;
+    padding: 10px 15px;
+    border: 1px solid #E4D9FF;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #5958B2;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+
+.update-email-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+
+.form-card {
+    background: #212F4F;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 10px #5958B2;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.form-card h1 {
+    font-size: 2rem;
+    color: #72bcd4;
+    margin-bottom: 10px;
+}
+
+.form-card p {
+    font-size: 1rem;
+    color: #E4D9FF;
+    margin-bottom: 20px;
+}
+
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-card label {
+    text-align: left;
+    font-size: 1rem;
+    color: #72bcd4;
+}
+
+.form-card input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #283655;
+    color: #E4D9FF;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.form-card input::placeholder {
+    color: #E4D9FF;
+    opacity: 0.7;
+}
+
+.form-card input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #72bcd4;
+}
+
+
+.form-card button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #72bcd4;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.form-card button:hover {
+    background-color: #5958B2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

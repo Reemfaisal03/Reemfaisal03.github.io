@@ -1,0 +1,164 @@
+
+body, h1, h2, h3, p, a, ul, li, ol {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Source Code Pro', monospace;
+    color: #E4D9FF;
+    list-style-type: none;
+}
+
+body {
+    background-color: #1a376d; 
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    background-color: #1a376d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin-right: 15px;
+    padding: 8px 15px;
+    border: 1px solid #E4D9FF;
+    border-radius: 5px;
+    color: #E4D9FF;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #5958B2;
+    color: #FFFFFF;
+}
+
+
+.hero {
+    padding: 50px 20px;
+    background: #1B1F3B;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+.hero h1 span {
+    color: #635399; 
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #E4D9FF;
+}
+
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #212F4F;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #E4D9FF;
+}
+
+
+.user-manual {
+    background-color: #635399; 
+    padding: 40px 20px;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.user-manual h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #E4D9FF;
+}
+
+.user-manual ol {
+    margin: 0;
+    padding: 0 20px;
+    color: #FFFFFF;
+    list-style-position: inside; 
+}
+
+.user-manual ol > li {
+    margin-bottom: 20px;
+}
+
+.user-manual ul {
+    margin: 10px 0 10px 20px; 
+    list-style-type: disc; 
+    list-style-position: inside; 
+}
+
+.user-manual ul > li {
+    margin-bottom: 10px;
+}
+
+.user-manual h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.user-manual p, .user-manual li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #E4D9FF;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #1a376d;
+    color: #E4D9FF;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #E4D9FF;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #FFFFFF;
+}

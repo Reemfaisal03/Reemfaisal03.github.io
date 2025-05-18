@@ -1,0 +1,146 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace; 
+    background: linear-gradient(180deg, #1a376d, #1a376d); 
+    color: #E4D9FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+.top-nav {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 15px; 
+}
+
+.top-nav a {
+    font-size: 0.9rem;
+    color: #E4D9FF; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: transparent; 
+    border: 1px solid #E4D9FF;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-nav a:hover {
+    background-color: #5958b2; 
+    color: #FFFFFF; 
+}
+
+
+.explore-container {
+    max-width: 900px;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #E4D9FF;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header h1 span {
+    color: #5958b2; 
+}
+
+header .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+.explore-sections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap; 
+}
+
+.explore-card {
+    background: #1a376d; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #5958b2;
+    text-align: center;
+    max-width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #FFFFFF;
+}
+
+.explore-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.explore-card p {
+    font-size: 1rem;
+    color: #E4D9FF;
+    margin-bottom: 20px;
+}
+
+.explore-card button {
+    font-size: 1rem;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    background-color: #5958b2; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-card button:hover {
+    background-color: #726ed5;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 40px;
+    color: #E4D9FF;
+}
+
+footer .social-links a {
+    color: #5958b2;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #FFFFFF;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

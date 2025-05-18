@@ -1,0 +1,187 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace; 
+    background: linear-gradient(180deg, #1a376d, #1a376d); 
+    color: #E4D9FF;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 0;
+    background-color: #1a376d; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    font-size: 1rem;
+    color: #E4D9FF; 
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #5958b2; 
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+
+.hero-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: #1a376d;
+    color: #E4D9FF;
+    box-shadow: 0 0 10px #5958b2;
+}
+
+.hero-banner .hero-content h1 {
+    font-size: 2.5rem;
+    color: #E4D9FF;
+    margin-bottom: 10px;
+}
+
+.hero-banner .hero-content p {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+
+
+.user-info {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #1a376d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #5958b2;
+}
+
+.info-card h2 {
+    font-size: 1.5rem;
+    color: #E4D9FF;
+}
+
+.info-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+
+
+.recent-activities, .friends, .badges, .notifications, .saved-items, .progress-tracker, .quote-section, .dark-mode-toggle, .logout-section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #1a376d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #5958b2;
+}
+
+.recent-activities h2, .friends h2, .badges h2, .notifications h2, .saved-items h2, .progress-tracker h2, .quote-section h2 {
+    font-size: 1.5rem;
+    color: #E4D9FF;
+}
+
+.recent-activities ul, .friends ul, .notifications ul, .saved-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activities ul li, .friends ul li, .notifications ul li, .saved-items ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background: #1a376d;
+    border: 1px solid #5958b2;
+    border-radius: 5px;
+    color: #E4D9FF;
+}
+
+
+.progress-bar {
+    width: 100%;
+    background: #333;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #5958b2; 
+}
+
+
+.quote-section .quote {
+    font-style: italic;
+    text-align: center;
+    color: #E4D9FF;
+}
+
+
+body.dark-mode {
+    background: #121212;
+    color: #E4D9FF;
+}
+
+body.dark-mode .navbar {
+    background: #1e1e1e;
+}
+
+body.dark-mode .navbar a {
+    color: #bbb;
+}
+
+body.dark-mode .navbar a:hover, body.dark-mode .navbar a.active {
+    background: #5958b2;
+}
+
+body.dark-mode .progress-bar {
+    background: #333;
+}
+
+body.dark-mode .progress {
+    background: #726ed5; 
+}
+
+body.dark-mode .quote-section .quote {
+    color: #ddd;
+}
+
+button {
+    padding: 10px 15px;
+    background: #5958b2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #726ed5;
+    transform: scale(1.05);
+}
+
+.logout-button {
+    background: #f44336;
+}
+
+.logout-button:hover {
+    background: #d32f2f;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1a376d;
+    color: #E4D9FF;
+    margin-top: 20px;
+}

@@ -1,0 +1,131 @@
+/* General Reset */
+body, h1, h2, p, a, label, input {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    color: #E4D9FF;
+}
+
+body {
+    background-color: #1a376d; /* Dark blue background */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 20px;
+    background-color: #1a376d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    margin-right: 15px;
+    padding: 8px 15px;
+    border: 1px solid #E4D9FF;
+    border-radius: 5px;
+    color: #E4D9FF;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #5958B2;
+    color: #FFFFFF;
+}
+
+.navbar a.active {
+    background-color: #5958B2;
+    border: 1px solid #5958B2;
+}
+
+/* Sign-In Section */
+.signin-container {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #212F4F;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signin-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.signin-container h1 span {
+    color: #5958B2;
+}
+
+.signin-container p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #E4D9FF;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #E4D9FF;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E4D9FF;
+    border-radius: 5px;
+    background-color: #14274E;
+    color: #E4D9FF;
+    font-size: 1rem;
+}
+
+.input-group input::placeholder {
+    color: #A9A9A9;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #5958B2;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #5958B2;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #41437D;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1a376d;
+    color: #E4D9FF;
+    font-size: 0.9rem;
+}
